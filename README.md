@@ -60,7 +60,7 @@ Model Serialization: Pickle
 
 ⚙️ Installation & Setup
 1️⃣ Clone the repository
-git clone https://github.com/your-username/fire-weather-index-prediction.git
+git clone https://github.com/nike14rath/fire-weather-index-prediction.git
 cd fire-weather-index-prediction
 
 2️⃣ Create and activate virtual environment
