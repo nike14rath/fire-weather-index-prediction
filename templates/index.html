@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fire Weather Index Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+        }
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        input, select, button {
+            width: 100%;
+            margin: 8px 0;
+            padding: 8px;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Fire Weather Index Prediction</h2>
+
+    <form action="/predictions" method="POST">
+
+        <label>Month (1-12)</label>
+        <input type="number" name="month" required>
+
+        <label>Temperature</label>
+        <input type="number" step="any" name="Temperature" required>
+
+        <label>Relative Humidity (RH)</label>
+        <input type="number" step="any" name="RH" required>
+
+        <label>Wind Speed (Ws)</label>
+        <input type="number" step="any" name="Ws" required>
+
+        <label>Rain</label>
+        <input type="number" step="any" name="Rain" required>
+
+        <label>FFMC</label>
+        <input type="number" step="any" name="FFMC" required>
+
+        <label>DMC</label>
+        <input type="number" step="any" name="DMC" required>
+
+        <label>ISI</label>
+        <input type="number" step="any" name="ISI" required>
+
+        <label>Classes</label>
+        <input type="number" step="any" name="Classes" required>
+
+        <label>Region</label>
+        <input type="number" step="any" name="Region" required>
+
+        <button type="submit">Predict</button>
+    </form>
+</div>
+
+</body>
+</html>
